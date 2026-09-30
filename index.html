@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Magic Box</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <div class="ai-icon">✨</div>
+
+            <h1>AI Magic Box</h1>
+
+            <p>
+                Ask Gemini anything!
+            </p>
+        </div>
+
+
+        <div class="input-section">
+
+            <label for="apiKey">
+                Gemini API key
+            </label>
+
+            <input id="apiKey" type="password" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Paste a newly generated API key">
+            <p class="key-note">Used only in this tab. Do not use a shared key in a public browser app.</p>
+
+            <label for="prompt">
+                What do you want to ask?
+            </label>
+
+            <textarea id="prompt" maxlength="4000" placeholder="Example: Explain JavaScript to me like I am 10 years old..."></textarea>
+
+
+            <button id="askBtn" type="button">
+                ✨ Ask Gemini
+            </button>
+
+            <p id="error" class="error" role="alert" aria-live="polite"></p>
+
+        </div>
+
+
+        <div id="loading" class="loading">
+
+            <div class="spinner"></div>
+
+            <p>Gemini is thinking...</p>
+
+        </div>
+
+
+        <div class="response-section">
+
+            <div class="response-header">
+
+                <span>🤖</span>
+
+                <h2>Gemini's Response</h2>
+
+            </div>
+
+            <div id="result">
+                <p class="placeholder">
+                    Your AI response will appear here...
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
